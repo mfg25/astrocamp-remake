@@ -1,0 +1,60 @@
+/*!********************************************************************!*\
+  !*** css ./node_modules/css-loader/dist/cjs.js!./src/pressets.css ***!
+  \********************************************************************/
+@import url(https://fonts.googleapis.com/css2?family=Oswald:wght@200&display=swap);
+/*!*****************************************************************************!*\
+  !*** css ./node_modules/css-loader/dist/cjs.js!./src/components/header.css ***!
+  \*****************************************************************************/
+header{
+    z-index: 1;
+    position: fixed;
+    height: 100px;
+    width: 100%;
+    background-color: rgb(2, 2, 2);
+    display:flex;
+    align-items: center;
+    justify-content: space-around;
+}
+#header-img{
+    left: 150px;
+    height: 50%;
+    height: 85px;
+}
+
+.nav-links {
+  display: flex;
+  justify-content: space-around;
+  width: 30%;
+  height: 100%;
+}
+
+.nav-links a{
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+  text-decoration: none;
+  color: #f1f0e0;
+  font-family: Oswald;
+  height: 100%;
+  width: 100%;
+}
+.nav-links a:hover{
+    cursor: pointer;
+    animation-name: nav;
+    animation-duration: 1s;
+    animation-fill-mode: forwards;
+}
+@keyframes nav {
+    100%{
+       color:black;
+       background: #f1f0e0;
+    }
+}
+/*!************************************************************************!*\
+  !*** css ./node_modules/css-loader/dist/cjs.js!./src/pressets.css (1) ***!
+  \************************************************************************/
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
