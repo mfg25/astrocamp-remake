@@ -20,6 +20,16 @@ eval("__webpack_require__.r(__webpack_exports__);\n// extracted by mini-css-extr
 
 /***/ }),
 
+/***/ "./src/components/mainPage/video-container.css":
+/*!*****************************************************!*\
+  !*** ./src/components/mainPage/video-container.css ***!
+  \*****************************************************/
+/***/ ((__unused_webpack_module, __webpack_exports__, __webpack_require__) => {
+
+eval("__webpack_require__.r(__webpack_exports__);\n// extracted by mini-css-extract-plugin\n\n\n//# sourceURL=webpack://astrocamp/./src/components/mainPage/video-container.css?");
+
+/***/ }),
+
 /***/ "./src/pressets.css":
 /*!**************************!*\
   !*** ./src/pressets.css ***!
@@ -36,7 +46,17 @@ eval("__webpack_require__.r(__webpack_exports__);\n// extracted by mini-css-extr
   \**********************************/
 /***/ ((__unused_webpack_module, __webpack_exports__, __webpack_require__) => {
 
-eval("__webpack_require__.r(__webpack_exports__);\n/* harmony export */ __webpack_require__.d(__webpack_exports__, {\n/* harmony export */   \"default\": () => (__WEBPACK_DEFAULT_EXPORT__)\n/* harmony export */ });\n/* harmony import */ var _header_css__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! ./header.css */ \"./src/components/header.css\");\n/* harmony import */ var _nav_js__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! ./nav.js */ \"./src/components/nav.js\");\n/* harmony import */ var _logo_png__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! ./logo.png */ \"./src/components/logo.png\");\n\r\n\r\n\r\n\r\nfunction Heading(){\r\n    let headerElement = document.createElement('header')\r\n    headerElement.id = 'header'\r\n\r\n    let astrocampLogo = document.createElement('img')\r\n    astrocampLogo.src = _logo_png__WEBPACK_IMPORTED_MODULE_2__\r\n    astrocampLogo.id = 'header-img'\r\n    headerElement.appendChild(astrocampLogo)\r\n\r\n    headerElement.appendChild((0,_nav_js__WEBPACK_IMPORTED_MODULE_1__[\"default\"])())\r\n\r\n    return headerElement;\r\n}\r\n\r\n/* harmony default export */ const __WEBPACK_DEFAULT_EXPORT__ = (Heading);\n\n//# sourceURL=webpack://astrocamp/./src/components/header.js?");
+eval("__webpack_require__.r(__webpack_exports__);\n/* harmony export */ __webpack_require__.d(__webpack_exports__, {\n/* harmony export */   \"default\": () => (__WEBPACK_DEFAULT_EXPORT__)\n/* harmony export */ });\n/* harmony import */ var _header_css__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! ./header.css */ \"./src/components/header.css\");\n/* harmony import */ var _nav_js__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! ./nav.js */ \"./src/components/nav.js\");\n/* harmony import */ var _logo_png__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! ./logo.png */ \"./src/components/logo.png\");\n\r\n\r\n\r\n\r\nfunction Heading(){\r\n\r\n    let headerElement = document.createElement('header')\r\n    headerElement.id = 'header'\r\n\r\n    let astrocampLogo = document.createElement('img')\r\n    astrocampLogo.src = _logo_png__WEBPACK_IMPORTED_MODULE_2__\r\n    astrocampLogo.id = 'header-img'\r\n    headerElement.appendChild(astrocampLogo)\r\n\r\n    headerElement.appendChild((0,_nav_js__WEBPACK_IMPORTED_MODULE_1__[\"default\"])())\r\n\r\n    return headerElement;\r\n}\r\n\r\n/* harmony default export */ const __WEBPACK_DEFAULT_EXPORT__ = (Heading);\n\n//# sourceURL=webpack://astrocamp/./src/components/header.js?");
+
+/***/ }),
+
+/***/ "./src/components/mainPage/video-container.js":
+/*!****************************************************!*\
+  !*** ./src/components/mainPage/video-container.js ***!
+  \****************************************************/
+/***/ ((__unused_webpack_module, __webpack_exports__, __webpack_require__) => {
+
+eval("__webpack_require__.r(__webpack_exports__);\n/* harmony export */ __webpack_require__.d(__webpack_exports__, {\n/* harmony export */   \"default\": () => (__WEBPACK_DEFAULT_EXPORT__)\n/* harmony export */ });\n/* harmony import */ var _video_container_css__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! ./video-container.css */ \"./src/components/mainPage/video-container.css\");\n/* harmony import */ var _background_gif__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! ./background.gif */ \"./src/components/mainPage/background.gif\");\n\r\n\r\n\r\nfunction backgroundVideo(){\r\n\r\n    let divContainer = document.createElement('div')\r\n    divContainer.id = 'video-container'\r\n    \r\n    let backgroundVideo = document.createElement('img')\r\n    backgroundVideo.src = _background_gif__WEBPACK_IMPORTED_MODULE_1__\r\n    backgroundVideo.id = 'gif'\r\n\r\n    let introductionText = document.createElement('h1')\r\n    introductionText.id = 'introduction'\r\n    introductionText.innerText = `Take free online classes and courses in astronomy to build your\r\n    science skills. Explore astronomy, astrophysics and other popular\r\n    subjects with courses from top universities and institutions around\r\n    the world.`\r\n\r\n    divContainer.appendChild(backgroundVideo)\r\n    divContainer.appendChild(introductionText)\r\n    \r\n    return divContainer\r\n}\r\n\r\n/* harmony default export */ const __WEBPACK_DEFAULT_EXPORT__ = (backgroundVideo);\n\n//# sourceURL=webpack://astrocamp/./src/components/mainPage/video-container.js?");
 
 /***/ }),
 
@@ -56,7 +76,7 @@ eval("__webpack_require__.r(__webpack_exports__);\n/* harmony export */ __webpac
   \**********************/
 /***/ ((__unused_webpack_module, __webpack_exports__, __webpack_require__) => {
 
-eval("__webpack_require__.r(__webpack_exports__);\n/* harmony import */ var _components_header_js__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! ./components/header.js */ \"./src/components/header.js\");\n/* harmony import */ var _pressets_css__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! ./pressets.css */ \"./src/pressets.css\");\n\r\n\r\n\r\nconst heading = new _components_header_js__WEBPACK_IMPORTED_MODULE_0__[\"default\"]()\r\n\r\ndocument.getElementById('content').appendChild(heading)\n\n//# sourceURL=webpack://astrocamp/./src/index.js?");
+eval("__webpack_require__.r(__webpack_exports__);\n/* harmony import */ var _components_header_js__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! ./components/header.js */ \"./src/components/header.js\");\n/* harmony import */ var _components_mainPage_video_container_js__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! ./components/mainPage/video-container.js */ \"./src/components/mainPage/video-container.js\");\n/* harmony import */ var _pressets_css__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! ./pressets.css */ \"./src/pressets.css\");\n\r\n\r\n\r\n\r\nloadPage()\r\n\r\nfunction loadPage(){\r\n    const heading = new _components_header_js__WEBPACK_IMPORTED_MODULE_0__[\"default\"]()\r\n    document.getElementById('content').appendChild(heading)\r\n    const backVideo = new _components_mainPage_video_container_js__WEBPACK_IMPORTED_MODULE_1__[\"default\"]()\r\n    document.getElementById('content').appendChild(backVideo)\r\n}\n\n//# sourceURL=webpack://astrocamp/./src/index.js?");
 
 /***/ }),
 
@@ -67,6 +87,16 @@ eval("__webpack_require__.r(__webpack_exports__);\n/* harmony import */ var _com
 /***/ ((module, __unused_webpack_exports, __webpack_require__) => {
 
 eval("module.exports = __webpack_require__.p + \"704a804addce6e647e0c.png\";\n\n//# sourceURL=webpack://astrocamp/./src/components/logo.png?");
+
+/***/ }),
+
+/***/ "./src/components/mainPage/background.gif":
+/*!************************************************!*\
+  !*** ./src/components/mainPage/background.gif ***!
+  \************************************************/
+/***/ ((module, __unused_webpack_exports, __webpack_require__) => {
+
+eval("module.exports = __webpack_require__.p + \"af4b2fecb4b476332d80.gif\";\n\n//# sourceURL=webpack://astrocamp/./src/components/mainPage/background.gif?");
 
 /***/ })
 

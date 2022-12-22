@@ -1,7 +1,7 @@
 header{
     z-index: 1;
     position: fixed;
-    height: 100px;
+    height: 10vh;
     width: 100%;
     background-color: rgb(2, 2, 2);
     display:flex;
@@ -12,6 +12,7 @@ header{
     left: 150px;
     height: 50%;
     height: 85px;
+    cursor: pointer;
 }
 
 .nav-links {

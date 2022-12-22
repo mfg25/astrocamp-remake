@@ -1,5 +1,6 @@
 const path = require('path');
 const MiniCssExtractPlugin = require('mini-css-extract-plugin')
+const HtmlWebpackPlugin = require('html-webpack-plugin')
 
 
 module.exports = {
@@ -23,14 +24,27 @@ module.exports = {
             ]
         },
         {
-            test: /\.(png|svg|jpg|jpeg|gif)$/i,
+            test: /\.(svg|jpg|jpeg|gif|png)$/i,
             type: 'asset/resource',
-        },
+        }, 
+        {
+          test: /\.(mov|mp4)$/,
+          use: [
+            {
+              loader: 'file-loader',
+              options: {
+                name: '[name].[ext]'
+              }  
+            }
+          ]
+        }
+        
     ]
   },
   plugins: [
     new MiniCssExtractPlugin({
         filename: 'index.css'
-    })
+    }),
+    
   ]
 };

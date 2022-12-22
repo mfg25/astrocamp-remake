@@ -8,7 +8,7 @@
 header{
     z-index: 1;
     position: fixed;
-    height: 100px;
+    height: 10vh;
     width: 100%;
     background-color: rgb(2, 2, 2);
     display:flex;
@@ -19,6 +19,7 @@ header{
     left: 150px;
     height: 50%;
     height: 85px;
+    cursor: pointer;
 }
 
 .nav-links {
@@ -50,6 +51,51 @@ header{
        background: #f1f0e0;
     }
 }
+/*!***********************************************************************************************!*\
+  !*** css ./node_modules/css-loader/dist/cjs.js!./src/components/mainPage/video-container.css ***!
+  \***********************************************************************************************/
+ #video-container{
+   
+    width: 100%;
+    height: 100%;
+    background-color: rgb(10, 10, 10);
+
+ }
+ #gif{
+     width: 100%;
+     height: 100vh;
+     object-fit: cover;
+     animation-name: video;
+     animation-duration: 4s;
+     animation-fill-mode: forwards;
+     overflow: hidden;
+     user-select: none;
+ }
+ @keyframes video{
+    100%{
+        opacity: 0.3
+    }
+ }
+ #introduction{
+    font-size: 35px;
+    text-align: center;
+    color: #f1f0e0;
+    letter-spacing: 2px;
+    font-weight: 1;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+    font-family: Oswald;
+    animation-name: video-text;
+    animation-duration: 4s;
+
+ }
+ @keyframes video-text{
+     0%{
+         opacity: 0;
+     }
+ }
 /*!************************************************************************!*\
   !*** css ./node_modules/css-loader/dist/cjs.js!./src/pressets.css (1) ***!
   \************************************************************************/
@@ -57,4 +103,5 @@ header{
     padding: 0;
     margin: 0;
     box-sizing: border-box;
+    overflow: hidden;
 }

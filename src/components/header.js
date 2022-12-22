@@ -3,6 +3,7 @@ import nav from './nav.js';
 import Logo from './logo.png';
 
 function Heading(){
+
     let headerElement = document.createElement('header')
     headerElement.id = 'header'
 
