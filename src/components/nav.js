@@ -8,12 +8,10 @@ function nav () {
     let link0 = document.createElement('a')
     let link1 = document.createElement('a')
     let link2 = document.createElement('a')
-    let link3 = document.createElement('a')
 
     link0.innerHTML = 'Home'
     link1.innerHTML = 'About us'
-    link2.innerHTML = 'Our plans'
-    link3.innerHTML = 'Get started'
+    link2.innerHTML = 'Get started'
 
     link0.addEventListener('click', e =>{
         loadPage();
@@ -26,7 +24,7 @@ function nav () {
     nav.appendChild(link0)
     nav.appendChild(link1)
     nav.appendChild(link2)
-    nav.appendChild(link3)
+
 
     return nav
 }

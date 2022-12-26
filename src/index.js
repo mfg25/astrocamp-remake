@@ -25,7 +25,6 @@ export function loadAboutUs(){
     document.getElementById('content').appendChild(heading)
     const content = new contentAboutUs()
     document.getElementById('content').appendChild(content)
-
     const foot = new footer()
     document.getElementById('content').appendChild(foot)
 }
