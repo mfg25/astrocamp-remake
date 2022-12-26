@@ -1,0 +1,19 @@
+footer{
+    height: 10vh;
+    width: 100vw;
+    background-color: rgb(2, 2, 2);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+#text{
+    letter-spacing: 1.5px;
+    color: #f1f0e0;
+    font-family: Oswald;
+    margin: 4px;
+}
+#svg{
+    display: flex;
+    justify-content: center;
+    margin: 4px;
+}

@@ -10,10 +10,12 @@ module.exports = {
     path: path.resolve(__dirname, 'dist'),
   },
   mode:'development',
-  devServer: { 
-    contentBase: path.resolve(__dirname, 'dist'),
-    index: 'index.html',
-    port: 9000
+  devServer: {
+    static: {
+      directory: path.join(__dirname, './dist'),
+    },
+    compress: true,
+    port: 9003,
   },
   module: {
     rules: [
