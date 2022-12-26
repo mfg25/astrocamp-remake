@@ -10,6 +10,16 @@
 /******/ 	"use strict";
 /******/ 	var __webpack_modules__ = ({
 
+/***/ "./src/components/footer/footer.css":
+/*!******************************************!*\
+  !*** ./src/components/footer/footer.css ***!
+  \******************************************/
+/***/ ((__unused_webpack_module, __webpack_exports__, __webpack_require__) => {
+
+eval("__webpack_require__.r(__webpack_exports__);\n// extracted by mini-css-extract-plugin\n\n\n//# sourceURL=webpack://astrocamp/./src/components/footer/footer.css?");
+
+/***/ }),
+
 /***/ "./src/components/header.css":
 /*!***********************************!*\
   !*** ./src/components/header.css ***!
@@ -40,6 +50,16 @@ eval("__webpack_require__.r(__webpack_exports__);\n// extracted by mini-css-extr
 
 /***/ }),
 
+/***/ "./src/components/footer/footer.js":
+/*!*****************************************!*\
+  !*** ./src/components/footer/footer.js ***!
+  \*****************************************/
+/***/ ((__unused_webpack_module, __webpack_exports__, __webpack_require__) => {
+
+eval("__webpack_require__.r(__webpack_exports__);\n/* harmony export */ __webpack_require__.d(__webpack_exports__, {\n/* harmony export */   \"default\": () => (__WEBPACK_DEFAULT_EXPORT__)\n/* harmony export */ });\n/* harmony import */ var _footer_css__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! ./footer.css */ \"./src/components/footer/footer.css\");\n\r\n\r\nfunction footer(){\r\n    const foot = document.createElement('footer')\r\n    foot.id = 'footer'\r\n\r\n    const text = document.createElement('h3')\r\n    text.innerText = 'Developed by Matheus Germano'\r\n    text.id = 'text'\r\n    foot.appendChild(text)\r\n    const svg = document.createElement('div')\r\n    svg.innerHTML = '<svg xmlns=\"http://www.w3.org/2000/svg\" fill= \"white\" width=\"24\" height=\"24\" viewBox=\"0 0 24 24\"><path d=\"M19 0h-14c-2.761 0-5 2.239-5 5v14c0 2.761 2.239 5 5 5h14c2.762 0 5-2.239 5-5v-14c0-2.761-2.238-5-5-5zm-11 19h-3v-11h3v11zm-1.5-12.268c-.966 0-1.75-.79-1.75-1.764s.784-1.764 1.75-1.764 1.75.79 1.75 1.764-.783 1.764-1.75 1.764zm13.5 12.268h-3v-5.604c0-3.368-4-3.113-4 0v5.604h-3v-11h3v1.765c1.396-2.586 7-2.777 7 2.476v6.759z\"/></svg>'\r\n    svg.id = 'svg'\r\n    foot.appendChild(svg)\r\n   \r\n\r\n    \r\n    return foot;\r\n}\r\n\r\n/* harmony default export */ const __WEBPACK_DEFAULT_EXPORT__ = (footer);\n\n//# sourceURL=webpack://astrocamp/./src/components/footer/footer.js?");
+
+/***/ }),
+
 /***/ "./src/components/header.js":
 /*!**********************************!*\
   !*** ./src/components/header.js ***!
@@ -66,7 +86,7 @@ eval("__webpack_require__.r(__webpack_exports__);\n/* harmony export */ __webpac
   \*******************************/
 /***/ ((__unused_webpack_module, __webpack_exports__, __webpack_require__) => {
 
-eval("__webpack_require__.r(__webpack_exports__);\n/* harmony export */ __webpack_require__.d(__webpack_exports__, {\n/* harmony export */   \"default\": () => (__WEBPACK_DEFAULT_EXPORT__)\n/* harmony export */ });\nfunction nav () {\r\n    let nav = document.createElement('nav')\r\n    nav.classList.add('nav-links')\r\n\r\n    let link1 = document.createElement('a')\r\n    let link2 = document.createElement('a')\r\n    let link3 = document.createElement('a')\r\n\r\n    link1.innerHTML = 'About us'\r\n    link2.innerHTML = 'Our plans'\r\n    link3.innerHTML = 'Get started'\r\n\r\n    nav.appendChild(link1)\r\n    nav.appendChild(link2)\r\n    nav.appendChild(link3)\r\n\r\n    return nav\r\n}\r\n\r\n/* harmony default export */ const __WEBPACK_DEFAULT_EXPORT__ = (nav);\n\n//# sourceURL=webpack://astrocamp/./src/components/nav.js?");
+eval("__webpack_require__.r(__webpack_exports__);\n/* harmony export */ __webpack_require__.d(__webpack_exports__, {\n/* harmony export */   \"default\": () => (__WEBPACK_DEFAULT_EXPORT__)\n/* harmony export */ });\nfunction nav () {\r\n    let nav = document.createElement('nav')\r\n    nav.classList.add('nav-links')\r\n\r\n    nav.innerHTML = '<a onclick=\"loadAboutUs()\">About us</a><a>Our plans</a><a>Get started</a>'\r\n\r\n    return nav\r\n}\r\n\r\n/* harmony default export */ const __WEBPACK_DEFAULT_EXPORT__ = (nav);\n\n//# sourceURL=webpack://astrocamp/./src/components/nav.js?");
 
 /***/ }),
 
@@ -76,7 +96,7 @@ eval("__webpack_require__.r(__webpack_exports__);\n/* harmony export */ __webpac
   \**********************/
 /***/ ((__unused_webpack_module, __webpack_exports__, __webpack_require__) => {
 
-eval("__webpack_require__.r(__webpack_exports__);\n/* harmony import */ var _components_header_js__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! ./components/header.js */ \"./src/components/header.js\");\n/* harmony import */ var _components_mainPage_video_container_js__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! ./components/mainPage/video-container.js */ \"./src/components/mainPage/video-container.js\");\n/* harmony import */ var _pressets_css__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! ./pressets.css */ \"./src/pressets.css\");\n\r\n\r\n\r\n\r\nloadPage()\r\n\r\nfunction loadPage(){\r\n    const heading = new _components_header_js__WEBPACK_IMPORTED_MODULE_0__[\"default\"]()\r\n    document.getElementById('content').appendChild(heading)\r\n    const backVideo = new _components_mainPage_video_container_js__WEBPACK_IMPORTED_MODULE_1__[\"default\"]()\r\n    document.getElementById('content').appendChild(backVideo)\r\n}\n\n//# sourceURL=webpack://astrocamp/./src/index.js?");
+eval("__webpack_require__.r(__webpack_exports__);\n/* harmony import */ var _components_header_js__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! ./components/header.js */ \"./src/components/header.js\");\n/* harmony import */ var _components_mainPage_video_container_js__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! ./components/mainPage/video-container.js */ \"./src/components/mainPage/video-container.js\");\n/* harmony import */ var _components_footer_footer_js__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! ./components/footer/footer.js */ \"./src/components/footer/footer.js\");\n/* harmony import */ var _pressets_css__WEBPACK_IMPORTED_MODULE_3__ = __webpack_require__(/*! ./pressets.css */ \"./src/pressets.css\");\n\r\n\r\n\r\n\r\n\r\n\r\nloadPage()\r\n\r\nfunction loadPage(){\r\n    const heading = new _components_header_js__WEBPACK_IMPORTED_MODULE_0__[\"default\"]()\r\n    document.getElementById('content').appendChild(heading)\r\n    const backVideo = new _components_mainPage_video_container_js__WEBPACK_IMPORTED_MODULE_1__[\"default\"]()\r\n    document.getElementById('content').appendChild(backVideo)\r\n    const foot = new _components_footer_footer_js__WEBPACK_IMPORTED_MODULE_2__[\"default\"]()\r\n    document.getElementById('content').appendChild(foot)\r\n}\r\n\r\nfunction loadAboutUs(){\r\n    console.log('teste')\r\n    const heading = new _components_header_js__WEBPACK_IMPORTED_MODULE_0__[\"default\"]()\r\n    document.getElementById('content').appendChild(heading)\r\n\r\n    const foot = new _components_footer_footer_js__WEBPACK_IMPORTED_MODULE_2__[\"default\"]()\r\n    document.getElementById('content').appendChild(foot)\r\n}\n\n//# sourceURL=webpack://astrocamp/./src/index.js?");
 
 /***/ }),
 
