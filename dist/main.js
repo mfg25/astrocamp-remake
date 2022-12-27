@@ -10,6 +10,16 @@
 /******/ 	"use strict";
 /******/ 	var __webpack_modules__ = ({
 
+/***/ "./src/components/aboutUs/aboutUs.css":
+/*!********************************************!*\
+  !*** ./src/components/aboutUs/aboutUs.css ***!
+  \********************************************/
+/***/ ((__unused_webpack_module, __webpack_exports__, __webpack_require__) => {
+
+eval("__webpack_require__.r(__webpack_exports__);\n// extracted by mini-css-extract-plugin\n\n\n//# sourceURL=webpack://astrocamp/./src/components/aboutUs/aboutUs.css?");
+
+/***/ }),
+
 /***/ "./src/components/footer/footer.css":
 /*!******************************************!*\
   !*** ./src/components/footer/footer.css ***!
@@ -50,6 +60,16 @@ eval("__webpack_require__.r(__webpack_exports__);\n// extracted by mini-css-extr
 
 /***/ }),
 
+/***/ "./src/components/aboutUs/aboutUs.js":
+/*!*******************************************!*\
+  !*** ./src/components/aboutUs/aboutUs.js ***!
+  \*******************************************/
+/***/ ((__unused_webpack_module, __webpack_exports__, __webpack_require__) => {
+
+eval("__webpack_require__.r(__webpack_exports__);\n/* harmony export */ __webpack_require__.d(__webpack_exports__, {\n/* harmony export */   \"default\": () => (__WEBPACK_DEFAULT_EXPORT__)\n/* harmony export */ });\n/* harmony import */ var _aboutUs_css__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! ./aboutUs.css */ \"./src/components/aboutUs/aboutUs.css\");\n\r\n\r\nfunction contentAboutUs(){\r\n    let mainContainer = document.createElement('main')\r\n    mainContainer.id = 'contentAboutUs'\r\n\r\n    let textContainer = document.createElement('div')\r\n    textContainer.id = 'textContainer'\r\n\r\n    let description = document.createElement('p')\r\n    description.id = 'description'\r\n    description.innerText = `Astrocamp is a website that offers a variety of online courses in astronomy for people of all ages and skill levels. Our courses are designed to be interactive and engaging, with a focus on helping students learn about the cosmos in a fun and meaningful way.\r\n\r\n    Our course offerings range from basic introductions to astronomy for beginners to more advanced courses that delve into the latest research and theories in the field. We also offer courses on practical astronomy skills, such as how to use telescopes and other observational equipment, as well as courses on the history of astronomy and the cultural and societal impacts of our understanding of the universe.\r\n    \r\n    In addition to our course offerings, Astrocamp also has a thriving community of students and enthusiasts who share their own observations, photos, and experiences with astronomy. Our forums and chatrooms provide a place for students to connect with others who share their passion for the stars, and our social media pages keep students up to date on the latest news and developments in the world of astronomy.\r\n\r\n    Whether you're a beginner looking to learn about the basics of astronomy or a seasoned enthusiast looking to deepen your understanding of the cosmos, Astrocamp has something for everyone.`\r\n    \r\n    textContainer.appendChild(description)\r\n\r\n    mainContainer.appendChild(textContainer)\r\n\r\n    \r\n    return mainContainer\r\n}\r\n\r\n/* harmony default export */ const __WEBPACK_DEFAULT_EXPORT__ = (contentAboutUs);\n\n//# sourceURL=webpack://astrocamp/./src/components/aboutUs/aboutUs.js?");
+
+/***/ }),
+
 /***/ "./src/components/footer/footer.js":
 /*!*****************************************!*\
   !*** ./src/components/footer/footer.js ***!
@@ -86,7 +106,7 @@ eval("__webpack_require__.r(__webpack_exports__);\n/* harmony export */ __webpac
   \*******************************/
 /***/ ((__unused_webpack_module, __webpack_exports__, __webpack_require__) => {
 
-eval("__webpack_require__.r(__webpack_exports__);\n/* harmony export */ __webpack_require__.d(__webpack_exports__, {\n/* harmony export */   \"default\": () => (__WEBPACK_DEFAULT_EXPORT__)\n/* harmony export */ });\nfunction nav () {\r\n    let nav = document.createElement('nav')\r\n    nav.classList.add('nav-links')\r\n\r\n    nav.innerHTML = '<a onclick=\"loadAboutUs()\">About us</a><a>Our plans</a><a>Get started</a>'\r\n\r\n    return nav\r\n}\r\n\r\n/* harmony default export */ const __WEBPACK_DEFAULT_EXPORT__ = (nav);\n\n//# sourceURL=webpack://astrocamp/./src/components/nav.js?");
+eval("__webpack_require__.r(__webpack_exports__);\n/* harmony export */ __webpack_require__.d(__webpack_exports__, {\n/* harmony export */   \"default\": () => (__WEBPACK_DEFAULT_EXPORT__)\n/* harmony export */ });\n/* harmony import */ var _index_js__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! ../index.js */ \"./src/index.js\");\n\r\n\r\n\r\nfunction nav () {\r\n    let nav = document.createElement('nav')\r\n    nav.classList.add('nav-links')\r\n    \r\n    let link0 = document.createElement('a')\r\n    let link1 = document.createElement('a')\r\n    let link2 = document.createElement('a')\r\n\r\n    link0.innerHTML = 'Home'\r\n    link1.innerHTML = 'About us'\r\n    link2.innerHTML = 'Get started'\r\n\r\n    link0.addEventListener('click', e =>{\r\n        ;(0,_index_js__WEBPACK_IMPORTED_MODULE_0__.loadPage)();\r\n    })\r\n\r\n    link1.addEventListener('click', e =>{\r\n        ;(0,_index_js__WEBPACK_IMPORTED_MODULE_0__.loadAboutUs)();\r\n    })\r\n\r\n    nav.appendChild(link0)\r\n    nav.appendChild(link1)\r\n    nav.appendChild(link2)\r\n\r\n\r\n    return nav\r\n}\r\n\r\n/* harmony default export */ const __WEBPACK_DEFAULT_EXPORT__ = (nav);\n\n//# sourceURL=webpack://astrocamp/./src/components/nav.js?");
 
 /***/ }),
 
@@ -96,7 +116,7 @@ eval("__webpack_require__.r(__webpack_exports__);\n/* harmony export */ __webpac
   \**********************/
 /***/ ((__unused_webpack_module, __webpack_exports__, __webpack_require__) => {
 
-eval("__webpack_require__.r(__webpack_exports__);\n/* harmony import */ var _components_header_js__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! ./components/header.js */ \"./src/components/header.js\");\n/* harmony import */ var _components_mainPage_video_container_js__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! ./components/mainPage/video-container.js */ \"./src/components/mainPage/video-container.js\");\n/* harmony import */ var _components_footer_footer_js__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! ./components/footer/footer.js */ \"./src/components/footer/footer.js\");\n/* harmony import */ var _pressets_css__WEBPACK_IMPORTED_MODULE_3__ = __webpack_require__(/*! ./pressets.css */ \"./src/pressets.css\");\n\r\n\r\n\r\n\r\n\r\n\r\nloadPage()\r\n\r\nfunction loadPage(){\r\n    const heading = new _components_header_js__WEBPACK_IMPORTED_MODULE_0__[\"default\"]()\r\n    document.getElementById('content').appendChild(heading)\r\n    const backVideo = new _components_mainPage_video_container_js__WEBPACK_IMPORTED_MODULE_1__[\"default\"]()\r\n    document.getElementById('content').appendChild(backVideo)\r\n    const foot = new _components_footer_footer_js__WEBPACK_IMPORTED_MODULE_2__[\"default\"]()\r\n    document.getElementById('content').appendChild(foot)\r\n}\r\n\r\nfunction loadAboutUs(){\r\n    console.log('teste')\r\n    const heading = new _components_header_js__WEBPACK_IMPORTED_MODULE_0__[\"default\"]()\r\n    document.getElementById('content').appendChild(heading)\r\n\r\n    const foot = new _components_footer_footer_js__WEBPACK_IMPORTED_MODULE_2__[\"default\"]()\r\n    document.getElementById('content').appendChild(foot)\r\n}\n\n//# sourceURL=webpack://astrocamp/./src/index.js?");
+eval("__webpack_require__.r(__webpack_exports__);\n/* harmony export */ __webpack_require__.d(__webpack_exports__, {\n/* harmony export */   \"loadAboutUs\": () => (/* binding */ loadAboutUs),\n/* harmony export */   \"loadPage\": () => (/* binding */ loadPage)\n/* harmony export */ });\n/* harmony import */ var _components_header_js__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! ./components/header.js */ \"./src/components/header.js\");\n/* harmony import */ var _components_mainPage_video_container_js__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! ./components/mainPage/video-container.js */ \"./src/components/mainPage/video-container.js\");\n/* harmony import */ var _components_footer_footer_js__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! ./components/footer/footer.js */ \"./src/components/footer/footer.js\");\n/* harmony import */ var _components_aboutUs_aboutUs_js__WEBPACK_IMPORTED_MODULE_3__ = __webpack_require__(/*! ./components/aboutUs/aboutUs.js */ \"./src/components/aboutUs/aboutUs.js\");\n/* harmony import */ var _pressets_css__WEBPACK_IMPORTED_MODULE_4__ = __webpack_require__(/*! ./pressets.css */ \"./src/pressets.css\");\n\r\n\r\n\r\n\r\n\r\n\r\n\r\nloadPage()\r\n\r\nfunction loadPage(){\r\n    document.getElementById('content').innerHTML = ''\r\n    const heading = new _components_header_js__WEBPACK_IMPORTED_MODULE_0__[\"default\"]()\r\n    document.getElementById('content').appendChild(heading)\r\n    const backVideo = new _components_mainPage_video_container_js__WEBPACK_IMPORTED_MODULE_1__[\"default\"]()\r\n    document.getElementById('content').appendChild(backVideo)\r\n    const foot = new _components_footer_footer_js__WEBPACK_IMPORTED_MODULE_2__[\"default\"]()\r\n    document.getElementById('content').appendChild(foot)\r\n}\r\n\r\n\r\nfunction loadAboutUs(){\r\n    console.log('teste')\r\n    document.getElementById('content').innerHTML = ''\r\n    const heading = new _components_header_js__WEBPACK_IMPORTED_MODULE_0__[\"default\"]()\r\n    document.getElementById('content').appendChild(heading)\r\n    const content = new _components_aboutUs_aboutUs_js__WEBPACK_IMPORTED_MODULE_3__[\"default\"]()\r\n    document.getElementById('content').appendChild(content)\r\n    const foot = new _components_footer_footer_js__WEBPACK_IMPORTED_MODULE_2__[\"default\"]()\r\n    document.getElementById('content').appendChild(foot)\r\n}\n\n//# sourceURL=webpack://astrocamp/./src/index.js?");
 
 /***/ }),
 
@@ -211,7 +231,7 @@ eval("module.exports = __webpack_require__.p + \"af4b2fecb4b476332d80.gif\";\n\n
 /******/ 	
 /******/ 	// startup
 /******/ 	// Load entry module and return exports
-/******/ 	// This entry module can't be inlined because the eval devtool is used.
+/******/ 	// This entry module is referenced by other modules so it can't be inlined
 /******/ 	var __webpack_exports__ = __webpack_require__("./src/index.js");
 /******/ 	
 /******/ })()
