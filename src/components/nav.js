@@ -1,5 +1,6 @@
 import {loadAboutUs} from '../index.js'
 import {loadPage} from '../index.js'
+import {loadGetStarted} from '../index.js'
 
 function nav () {
     let nav = document.createElement('nav')
@@ -19,6 +20,10 @@ function nav () {
 
     link1.addEventListener('click', e =>{
         loadAboutUs();
+    })
+
+    link2.addEventListener('click', e =>{
+        loadGetStarted();
     })
 
     nav.appendChild(link0)
