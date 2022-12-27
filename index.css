@@ -116,6 +116,48 @@ footer{
     margin: 4px;
 }
 
+/*!**************************************************************************************!*\
+  !*** css ./node_modules/css-loader/dist/cjs.js!./src/components/aboutUs/aboutUs.css ***!
+  \**************************************************************************************/
+#contentAboutUs{
+    width: 100%;
+    height: 80vh;
+    background: url(143b153ace876b774bb4.png);
+    background-size: cover;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+}
+#textContainer{
+    position: relative;
+    right:22%;
+    text-align: justify;
+    display: flex;
+    align-items: center;
+    line-height: 35px;
+    box-sizing: border-box;
+    width: 50%;
+    height: 80%;
+    font-size: 22px;
+    animation-name: slide;
+    animation-duration: 1s;
+    animation-fill-mode: forwards;
+}
+@keyframes slide{
+    0%{
+        opacity: 0;
+        right: 25%;
+    }
+}
+#iframe{
+    display: flex;
+    align-items: center;
+    box-shadow: 5px 5px 5px black;
+}
+#description{
+    color: rgb(238, 222, 222);
+    font-family: Oswald;
+}
 /*!************************************************************************!*\
   !*** css ./node_modules/css-loader/dist/cjs.js!./src/pressets.css (1) ***!
   \************************************************************************/
@@ -124,4 +166,9 @@ footer{
     margin: 0;
     box-sizing: border-box;
     overflow:hidden;
+}
+
+#content{
+    width: 100vw;
+    height: 100vh;
 }
