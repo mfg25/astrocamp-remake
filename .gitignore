@@ -1,1 +1,4 @@
-node_modules/*
+node_modules/
+*.jso
+node_modules
+
