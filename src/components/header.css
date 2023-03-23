@@ -36,3 +36,18 @@ header{
     color:black;
     background: aliceblue;
 }
+
+@media  (max-width: 640px) {
+  
+  #header-img{
+    left: 150px;
+    height: 65px;
+    cursor: pointer;
+}
+.nav-links {
+  display: flex;
+  justify-content: space-around;
+  width: 45%;
+  height: 100%;
+}
+}

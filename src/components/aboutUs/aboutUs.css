@@ -6,21 +6,22 @@
     display: flex;
     justify-content: space-around;
     align-items: center;
+    overflow: auto;
 }
 #textContainer{
     position: relative;
     right:22%;
-    text-align: justify;
     display: flex;
     align-items: center;
-    line-height: 35px;
     box-sizing: border-box;
     width: 50%;
-    height: 80%;
+    height: 100%;
     font-size: 22px;
     animation-name: slide;
     animation-duration: 1s;
     animation-fill-mode: forwards;
+    overflow: auto;
+    line-break: loose;
 }
 @keyframes slide{
     0%{
@@ -34,6 +35,17 @@
     box-shadow: 5px 5px 5px black;
 }
 #description{
+    height: 100%;
+    overflow: auto;
+    
     color: aliceblue;
     font-family: Oswald;
 }
+@media  (max-width: 700px) {
+    #textContainer{
+        right:0%;
+        height: 90%;
+        width: 90%;
+        overflow: auto;
+    }
+  }

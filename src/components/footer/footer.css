@@ -12,8 +12,3 @@ footer{
     font-family: Oswald;
     margin: 4px;
 }
-#svg{
-    display: flex;
-    justify-content: center;
-    margin: 4px;
-}

@@ -39,3 +39,10 @@
          opacity: 0;
      }
  }
+ @media  (max-width: 640px) {
+    #introduction{
+        width: 90%;
+        font-size: 25px;
+    }
+    
+}

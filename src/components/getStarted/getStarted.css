@@ -12,9 +12,10 @@
     position: relative;
     left:20%;
     background-color: aliceblue;
-    padding: 25px 50px 50px 50px ;
-    width: min-content;
+    padding: 25px;
+   justify-content: center;
     display: flex;
+    align-items: center;
     border-radius: 5px;
     animation-name: nslide;
     animation-fill-mode: forwards;
@@ -57,3 +58,17 @@ button:hover{
         left: 23%;
     }
 }
+@media  (max-width: 800px) {
+  
+   #forms-container{
+    width: 60%;
+    left:0%;
+    
+   }
+   input{
+    padding: 2px;
+    width: 100%;
+    margin: 0px 0px 15px 0px;
+    border: 2px solid rgb(179, 184, 189);
+}
+  }
